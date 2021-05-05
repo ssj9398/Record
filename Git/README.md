@@ -1,17 +1,20 @@
-# Git ±â·ÏÇÏ±â
-1. Git bash¸¦ ÀÌ¿ëÇÏ¿© ¼¼ÆÃÇØÁÖÀÚ
-- git config -- °èÁ¤Á¤º¸ ¼³Á¤
+# Git ê¸°ë¡í•˜ê¸°
+1. Git bashë¥¼ ì´ìš©í•˜ì—¬ ì„¸íŒ…í•´ì£¼ì
+- git config -- ê³„ì •ì •ë³´ ì„¤ì •
 
-- git config --global user.name "°èÁ¤"
+- git config --global user.name "ê³„ì •"
 
-- git config --global user.email ÀÌ¸ŞÀÏ
+- git config --global user.email ì´ë©”ì¼
 
-- git init -- ±ê ÃÊ±âÈ­
+- git init -- ê¹ƒ ì´ˆê¸°í™”
 
-- git add . -- ·ÎÄÃ ÀúÀå¼ÒÄ¿¹Ô (.¶ç¾î¾²±â ÇØ¾ßÇÔ)
+- git add . -- ë¡œì»¬ ì €ì¥ì†Œì»¤ë°‹ (.ë„ì–´ì“°ê¸° í•´ì•¼í•¨)
 
-- git commit -m "First commit   --Ä¿¹Ô
+- git commit -m "First commit   --ì»¤ë°‹
 
-- git remote add origin #URL#  -- Repository µî·Ï
+- git remote add origin #URL#  -- Repository ë“±ë¡
 
 - git push -u origin master  -- git push
+
+2. VsCodeì—ì„œ ì»¤ë°‹í•˜ê³  gitì—ì„œ í™•ì¸ í–ˆì„ë•Œ í•œê¸€ì´ ê¹¨ì§ˆ ê²½ìš°
+- ê°„í˜¹ cmdê°€ ë¬¸ì œì¼ë•Œ ë‚˜íƒ€ë‚˜ë©° í•´ê²° ë°©ë²•ìœ¼ë¡œëŠ” cmdì—´ê³  set_LC_ALL = ko_KR. UTF-8ì„ ì¹˜ê³  ë‹¤ì‹œ ì»¤ë°‹í•˜ë©´ ì˜ ëœë‹¤.
