@@ -22,4 +22,4 @@
  appearance: none; background: url(이미지 경로) no-repeat 95% 50%; /* 화살표 모양의 이미지 */ }
 
  # Jquery 기록
- 1. .html()을 이용하여 값을 바꿔넣을 수 있다. https://ssj9398.github.io/Record/Html-Css/jquerytest.html
+ 1. .html()을 이용하여 값을 바꿔넣을 수 있다. https://github.com/ssj9398/Record/blob/main/Html-Css/jquerytest.html
