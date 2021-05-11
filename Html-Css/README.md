@@ -1,10 +1,10 @@
-# HTML±â·Ï
-1. ÅëÀ¸·Î µÈ ÀÌ¹ÌÁö¿¡ Æ¯Á¤ºÎºĞ url ¸µÅ© °Å´Â¹ı
+# HTMLê¸°ë¡
+1. í†µìœ¼ë¡œ ëœ ì´ë¯¸ì§€ì— íŠ¹ì •ë¶€ë¶„ url ë§í¬ ê±°ëŠ”ë²•
 - <img src="https://user-images.githubusercontent.com/48196352/116048685-61312e00-a6b0-11eb-9c1e-35041c6b779a.JPG" width="500">
-- ÁÂÇ¥´Â ±×¸²ÆÇ¿­¸é ½±°Ô ¾Ë¼öÀÖÀ½
+- ì¢Œí‘œëŠ” ê·¸ë¦¼íŒì—´ë©´ ì‰½ê²Œ ì•Œìˆ˜ìˆìŒ
 
-2. ¿À´ÃÇÏ·ç Ã¢ ´İ±â
-- onclickÀÌº¥Æ®¸¦ ÀÌ¿ëÇÏ¿© ¾Æ·¡¿Í °°ÀÌ functionÀ» Ãß°¡ÇØÁØ´Ù.
+2. ì˜¤ëŠ˜í•˜ë£¨ ì°½ ë‹«ê¸°
+- onclickì´ë²¤íŠ¸ë¥¼ ì´ìš©í•˜ì—¬ ì•„ë˜ì™€ ê°™ì´ functionì„ ì¶”ê°€í•´ì¤€ë‹¤.
 - function setCookie(name, value, expiredays) {
 			var todayDate = new Date();
 			todayDate.setDate(todayDate.getDate() + expiredays);
@@ -12,13 +12,14 @@
 					+ todayDate.toGMTString() + ";";
 		}
 
-3. ajax¸¦ »ç¿ë ÇÒ ¶§ jsp¿¡¼­ ajax·Î ¿äÃ»À» ÇÏ°í ÀÀ´äÀ» ¹Ş°í ³¯¾Æ¿Â response¿¡ & Áï ¿¥ÆÛ¼¾Æ®°¡ ÀÖÀ» °æ¿ì ¿äÃ»À» ¹Ş´ÂÂÊ¿¡¼­ replac·Î Ä¡È¯À» ÇØÁÖ¾î¾ß ÇÑ´Ù.
-- ¿¹½Ã ÀÚ¹ÙÀÏ °æ¿ì) VoName.getParamater().replace("&","&amp;");
+3. ajaxë¥¼ ì‚¬ìš© í•  ë•Œ jspì—ì„œ ajaxë¡œ ìš”ì²­ì„ í•˜ê³  ì‘ë‹µì„ ë°›ê³  ë‚ ì•„ì˜¨ responseì— & ì¦‰ ì— í¼ì„¼íŠ¸ê°€ ìˆì„ ê²½ìš° ìš”ì²­ì„ ë°›ëŠ”ìª½ì—ì„œ replacë¡œ ì¹˜í™˜ì„ í•´ì£¼ì–´ì•¼ í•œë‹¤.
+- ì˜ˆì‹œ ìë°”ì¼ ê²½ìš°) VoName.getParamater().replace("&","&amp;");
 
-# CSS ±â·Ï
-1. SelectBox È­»ìÇ¥ ¸ğ¾ç Á¦°ÅÇÏ°í ´Ù¸¥°É·Î ¹Ù²Ù±â
-- select { -webkit-appearance: none; /* ³×ÀÌÆ¼ºê ¿ÜÇü °¨Ãß±â */ - moz-appearance: none; 
- appearance: none; background: url(ÀÌ¹ÌÁö °æ·Î) no-repeat 95% 50%; /* È­»ìÇ¥ ¸ğ¾çÀÇ ÀÌ¹ÌÁö */ }
+# CSS ê¸°ë¡
+* ë””ìì¸ ì°¸ê³ í•˜ê¸° ì¢‹ì€ ì‚¬ì´íŠ¸ -> https://speckyboy.com/free-photoshop-psd-web-design-template/
+1. SelectBox í™”ì‚´í‘œ ëª¨ì–‘ ì œê±°í•˜ê³  ë‹¤ë¥¸ê±¸ë¡œ ë°”ê¾¸ê¸°
+- select { -webkit-appearance: none; /* ë„¤ì´í‹°ë¸Œ ì™¸í˜• ê°ì¶”ê¸° */ - moz-appearance: none; 
+ appearance: none; background: url(ì´ë¯¸ì§€ ê²½ë¡œ) no-repeat 95% 50%; /* í™”ì‚´í‘œ ëª¨ì–‘ì˜ ì´ë¯¸ì§€ */ }
 
- # Jquery ±â·Ï
- 1. .html()À» ÀÌ¿ëÇÏ¿© °ªÀ» ¹Ù²ã³ÖÀ» ¼ö ÀÖ´Ù. https://ssj9398.github.io/Record/Html-Css/jquerytest.html
+ # Jquery ê¸°ë¡
+ 1. .html()ì„ ì´ìš©í•˜ì—¬ ê°’ì„ ë°”ê¿”ë„£ì„ ìˆ˜ ìˆë‹¤. https://ssj9398.github.io/Record/Html-Css/jquerytest.html
