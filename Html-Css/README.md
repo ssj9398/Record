@@ -15,6 +15,16 @@
 3. ajax를 사용 할 때 jsp에서 ajax로 요청을 하고 응답을 받고 날아온 response에 & 즉 엠퍼센트가 있을 경우 요청을 받는쪽에서 replac로 치환을 해주어야 한다.
 - 예시 자바일 경우) VoName.getParamater().replace("&","&amp;");
 
+4. HTML5 표준 크기 구하기
+
+- window.outerWidth  // 브라우저 창의 너비
+
+- window.innerWidth  // 브라우저 두께를 제외한 너비
+
+- window.outerHeight // 브라우저 창의 높이
+
+- window.innerHeight // 브라우저 두께를 제외한 높이
+
 # CSS 기록
 * 디자인 참고하기 좋은 사이트 -> https://speckyboy.com/free-photoshop-psd-web-design-template/
 1. SelectBox 화살표 모양 제거하고 다른걸로 바꾸기
