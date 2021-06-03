@@ -5,12 +5,14 @@
 
 2. 오늘하루 창 닫기
 - onclick이벤트를 이용하여 아래와 같이 function을 추가해준다.
-- function setCookie(name, value, expiredays) {
+```
+function setCookie(name, value, expiredays) {
 			var todayDate = new Date();
 			todayDate.setDate(todayDate.getDate() + expiredays);
 			document.cookie = name + "=" + escape(value) + "; path=/; expires="
 					+ todayDate.toGMTString() + ";";
 		}
+```		
 
 3. ajax를 사용 할 때 jsp에서 ajax로 요청을 하고 응답을 받고 날아온 response에 & 즉 엠퍼센트가 있을 경우 요청을 받는쪽에서 replac로 치환을 해주어야 한다.
 - 예시 자바일 경우) VoName.getParamater().replace("&","&amp;");
