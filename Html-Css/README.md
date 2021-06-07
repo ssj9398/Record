@@ -27,6 +27,8 @@ function setCookie(name, value, expiredays) {
 
 - window.innerHeight // 브라우저 두께를 제외한 높이
 
+- document.body.scrollHeight //body 높이
+
 # CSS 기록
 * 디자인 참고하기 좋은 사이트 -> https://speckyboy.com/free-photoshop-psd-web-design-template/
 1. SelectBox 화살표 모양 제거하고 다른걸로 바꾸기
