@@ -6,6 +6,20 @@
 
 2. alert띄우고 확인 후 이동
 ```
-alert('아직 전자협약서가 생성되지 않았습니다. \n ※ 전자협약서는 재단의 사업관리자가 제출된 협약 사업계획서를 검토한 후에 생성하게 됩니다.',function(){
+alert('내용',function(){
 });
+```
+
+3. 스크롤이동 시 색상 넣기
+```
+window.addEventListener("scroll",function(){
+	var height = window.pageYOffset;
+	var gnbWrap = document.querySelector(".gnbWrap");
+
+	gnbWrap.style.backgroundColor="#dedede";
+	if(height==0){
+		gnbWrap.style.backgroundColor="white";
+	}
+});
+
 ```
