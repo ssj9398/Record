@@ -10,3 +10,9 @@
 ```
 SELECT COLUMN_NAME , COUNT(*) FROM TABLE_NAME GROUP BY COLUMN_NAME HAVING COUNT(*) > 1 ;
 ```
+
+4. mysql 유저생성, 권한
+```
+ceate user USER_ID@localhost identified by 'USER_PASSWORD';
+grant all privileges on DATABASE_NAME.* to USER_ID@localhost;
+```
