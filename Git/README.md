@@ -60,3 +60,11 @@
 
 ---------------------------------------
 ```
+
+4. git 현재 연결된 repository url 확인
+- git remote -v
+
+5. git push 취소하기
+  1. git reset HEAD^       //가장 최근 commit 취소
+  2. git commit -m "message"   // 다시 커밋
+  3. git push -f origin branchname
