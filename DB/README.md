@@ -1,25 +1,45 @@
 # DB
-1. ¿À¶óÅ¬ ³¯Â¥Å¸ÀÔ
-- data -> string Å¸ÀÔÀ¸·Î ¹Ù²Ù±â
--  Å¸ÀÔ ¹Ù²ã¼­ ºñ±³ ¿¹½Ã TO_CHAR(column,'YYYYMMDD')> 20210430
+1. ì˜¤ë¼í´ ë‚ ì§œíƒ€ì…
+- data -> string íƒ€ì…ìœ¼ë¡œ ë°”ê¾¸ê¸°
+-  íƒ€ì… ë°”ê¿”ì„œ ë¹„êµ ì˜ˆì‹œ TO_CHAR(column,'YYYYMMDD')> 20210430
 
-2. ÄÃ·³¿¡ ÀÖ´Â ³»¿ë Áß ¼ıÀÚ¸¸ »Ì±â
+2. ì»¬ëŸ¼ì— ìˆëŠ” ë‚´ìš© ì¤‘ ìˆ«ìë§Œ ë½‘ê¸°
 - select regexp_replace(column,'[^0-9]') as AliasName from TableName
 
-3. Group by·Î Áßº¹ Ã£±â
+3. Group byë¡œ ì¤‘ë³µ ì°¾ê¸°
 ```
 SELECT COLUMN_NAME , COUNT(*) FROM TABLE_NAME GROUP BY COLUMN_NAME HAVING COUNT(*) > 1 ;
 ```
 
-4. mysql À¯Àú»ı¼º, ±ÇÇÑ
+4. mysql ìœ ì €ìƒì„±, ê¶Œí•œ
 ```
 ceate user USER_ID@localhost identified by 'USER_PASSWORD';
 grant all privileges on DATABASE_NAME.* to USER_ID@localhost;
 ```
 
-5. Oracle ¿ë·®
+5. Oracle ìš©ëŸ‰
 ```
-  1. select sum(bytes)/1024/1024/1024 ||'GB' from dba_data_files;  -- ÀüÃ¼¿ë·®
-  2. select sum(bytes)/1024/1024/1024 ||'GB' from dba_segments;    -- »ç¿ëÁß
-  3. select sum(bytes)/1024/1024/1024 ||'GB' from dba_free_space;  -- ÀÜ¿©·®
+  1. select sum(bytes)/1024/1024/1024 ||'GB' from dba_data_files;  -- ì „ì²´ìš©ëŸ‰
+  2. select sum(bytes)/1024/1024/1024 ||'GB' from dba_segments;    -- ì‚¬ìš©ì¤‘
+  3. select sum(bytes)/1024/1024/1024 ||'GB' from dba_free_space;  -- ì”ì—¬ëŸ‰
+```
+
+6. Oracle í…Œì´ë¸” ë³µì‚¬
+    1) êµ¬ì¡°ë§Œ ë³µì‚¬
+```
+create table table_name_copy as select * from table_name where 1=2;
+```
+
+    2) êµ¬ì¡°ì™€ ë¡œìš° ë³µì‚¬
+
+```
+create table table_name_copy as select * from table_name;
+```
+
+7. TRUNCATE
+- deleteì™€ ìœ ì‚¬í•œ ê²ƒìœ¼ë¡œ ì°¨ì´ì ì€ ë¡œê·¸ë¥¼ ìŒ“ì§€ ì•Šì•„ ì†ë„ê°€ ë¹ ë¦„
+- ë³µêµ¬ë¶ˆê°€ í™•ì‹¤í•œ ê²ƒë§Œ í•´ì•¼í•¨
+- ex)
+```
+TRUNCATE table table_name;
 ```
