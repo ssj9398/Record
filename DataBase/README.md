@@ -83,3 +83,8 @@ linkTest=
   )
 ```
 3. 혹시나 안된다면 환경변수 설정 해주기
+
+4. select 방법
+```
+select * from tablename@LINK_TEST;
+```
