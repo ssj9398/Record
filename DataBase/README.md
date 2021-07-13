@@ -61,3 +61,25 @@ TRUNCATE table table_name;
 ```
     DROP DATABASE LINK "링크명";
 ```
+
+#### db Link 동일 서버일 경우
+
+1. 계정 생성
+```
+ CREATE PUBLIC DATABASE LINK LINK_TEST
+CONNECT TO 계정ID IDENTIFIED BY PW USING 'linkTest';
+```
+tns
+```
+2. tnsnames.ora 수정
+linkTest= 
+	(DESCRIPTION= 
+  	(ADDRESS_LIST= 
+    	(ADDRESS=(PROTOCOL= TCP)(HOST={호스트IP1})(PORT={호스트 포트1})) 
+    ) 
+    (CONNECT_DATA= 
+    	(SERVICE_NAME=orcl) // SID명으로 대체 가능 
+    ) 
+  )
+```
+3. 혹시나 안된다면 환경변수 설정 해주기
