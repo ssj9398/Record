@@ -69,9 +69,9 @@ TRUNCATE table table_name;
  CREATE PUBLIC DATABASE LINK LINK_TEST
 CONNECT TO 계정ID IDENTIFIED BY PW USING 'linkTest';
 ```
-tns
-```
+
 2. tnsnames.ora 수정
+```
 linkTest= 
 	(DESCRIPTION= 
   	(ADDRESS_LIST= 
